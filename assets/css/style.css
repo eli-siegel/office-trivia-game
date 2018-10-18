@@ -1,0 +1,67 @@
+#logo {
+    width: 500px;
+}
+
+.toptext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 43px;
+    z-index: 100;
+    position: absolute;
+    top: 105px;
+    left: 175px;
+    color: rgb(228, 228, 228);
+}
+
+.container {
+    max-width: 800px;
+    height: 400px;
+    padding: 20px;
+}
+
+#startBtn {
+    margin-left: 300px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+#startBtn:hover {
+    background: black;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: url(../images/dunder-mifflin-wallpaper_205876.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.userChoice:hover {
+    background-color: black;
+    color: white;
+}
+
+.userChoice {
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.answers {
+    text-align: center;
+    font-size: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Office Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <!--Link to csss reset file-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <!--link to bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Link to jquery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <!--Link to js file-->
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <header>
+        <img id = "logo" src="assets/images/office-logo.png">
+        <h2 class= "toptext">Trivia</h2>
+    </header>
+    
+    <div class="container">
+            <button class='btn btn-primary white' id='startBtn'>click me to start</button>
+            <!-- Question -->
+            <div id= "timeLeft"></div>
+            <div id= "currentQuestion"></div>
+            <div class= "question"></div>
+            <div class= "answers"></div>
+            <!-- Answer (after user guesses, in between questions) -->
+            <div id= "message"></div>
+            <div id= "correctAnswer"></div>
+            <div id= "gif"></div>
+            <!-- Scoreboard (end of game display)-->
+            <div id= "finalMessage"></div>
+            <div id= "correctAnswers"></div>
+            <div id= "incorrectAnswers"></div>
+            <div id= "unanswered"></div>
+            <div id= "restartBtn"></div>
+    </div>
+    
+    
+</body>
+</html>
