@@ -62,7 +62,7 @@ var triviaQuestions = [{
     $('#startBtn').on('click', function(){
         $(this).hide();
         $(".container").css("background-color", "white");
-        $(".container").css("border", "solid 1px black");
+        $(".container").css("border", "solid 2px black");
         newGame();
     });
 
@@ -132,7 +132,7 @@ var triviaQuestions = [{
     function startTimer(){
         seconds--;
         $("#timeLeft").html("<p>Time Remaining: " + seconds + "</p>");
-        if(seconds < 1){
+        if (seconds < 1){
             clearInterval(time);
             //variable to see if user answered before time runs out
             answered = false;
@@ -149,19 +149,19 @@ var triviaQuestions = [{
         if ((userChoice === correctAnswer) && (answered === true)){
             correctAnswers ++;
             $("#message").html("<p>" + message.correct) + "<p>";
-            $("#gif").html('<img src = "assets/images/yes.gif" width = "300px">');
+            $("#gif").html('<img src = "assets/images/yes.gif" width = "400px">');
         }
 
         else if ((userChoice !=correctAnswer) && (answered === true)){
             incorrectAnswers ++;
             $("#message").html("<p>" + message.incorrect + correctChoice + "<p>");
-            $("#gif").html('<img src = "assets/images/false.gif" width = "300px">');
+            $("#gif").html('<img src = "assets/images/false.gif" height ="250px" width = "400px">');
         }
 
         else {
             unanswered ++;
             $("#message").html("<p>" + message.outOfTime + correctChoice + "<p>");
-            $("#gif").html('<img src = "assets/images/bored.gif" width = "300px">');
+            $("#gif").html('<img src = "assets/images/bored.gif" width = "400px">');
         }
 
         console.log("right: " + correctAnswers);
@@ -183,18 +183,18 @@ var triviaQuestions = [{
         $("#currentQuestion").empty();
         $("#message").empty();
         $("#message").html(message.final);
-        $("#restartBtn").html("<button id='startBtn'>Restart</button>");
+        $("#restartBtn").html("<button id='startBtn'>RESTART</button>");
         $("#restartBtn").show();
         $("#correctAnswers").html("Correct Answers: " + correctAnswers + "/10");
         $("#incorrectAnswers").html("Incorrect Answers: " + incorrectAnswers + "/10");
         $("#unanswered").html("Unanswered Questions: " + unanswered + "/10");
-        if (correctAnswers > 5) {
+        if (correctAnswers > 6) {
             $("#subMsg").html("You should really get outside more.");
-            $("#gif").html('<img src = "assets/images/smart.gif" width = "300px">');
+            $("#gif").html('<img src = "assets/images/smart.gif" width = "400px">');
         }
         else {
             $("#subMsg").html("Yikes. My mom always used to say that average people are the most special people in the world. And that’s why God made so many.");
-            $("#gif").html('<img src = "assets/images/dumb.gif" width = "300px">');
+            $("#gif").html('<img src = "assets/images/dumb.gif" width = "400px">');
         }
     }
 

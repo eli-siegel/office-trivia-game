@@ -4,19 +4,21 @@
 
 .toptext {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 43px;
+    font-weight: bold;
+    font-size: 44px;
     z-index: 100;
     position: absolute;
-    top: 105px;
+    top: 103px;
     left: 175px;
-    color: rgb(228, 228, 228);
+    color: rgb(233, 233, 233);
+    
 }
 
 .container {
     max-width: 800px;
     height: 420px;
     padding: 20px;
+    min-width: 500px;
 }
 
 #startBtn {
@@ -29,6 +31,8 @@
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: bold;
+    position: absolute;
+    bottom: 165px;
 
 }
 
@@ -36,10 +40,11 @@
     background: black;
     color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 1px white;
 }
 
 body {
-    background-image: url(../images/dunder-mifflin-wallpaper_205876.jpg);
+    background-image: url(../images/office-backgorund.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -65,7 +70,8 @@ body {
 #message {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+    left: 100px;
 }
 
 .userChoice:hover {
@@ -86,7 +92,7 @@ body {
 }
 
 #gif {
-    margin-left: 220px;
+    margin-left: 180px;
     margin-bottom: 10px;
 }
 
@@ -112,4 +118,28 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 15px;
+}
+
+#restartBtn {
+    bottom: -130px;
+    position: absolute;
+    border: solid 1px white;
+}
+
+@media screen and (max-width : 680px){
+    #gif {
+        left: -100px;
+        position: absolute;
+    }
+
+    #restartBtn {
+        position: absolute;
+        left: -100px;
+    }
+
+    #startBtn {
+        position: absolute;
+        left: -100px;
+    }
+
 }
