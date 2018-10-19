@@ -15,7 +15,7 @@
 
 .container {
     max-width: 800px;
-    height: 400px;
+    height: 420px;
     padding: 20px;
 }
 
@@ -25,9 +25,10 @@
     background-color: white;
     color: black;
     border: solid 1px black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
+    font-weight: bold;
 
 }
 
@@ -43,12 +44,28 @@ body {
     background-size: 100% 100%;
 }
 
-
-
-p {
+#currentQuestion {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
+}
+
+.question {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#timeLeft {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#message {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .userChoice:hover {
@@ -63,5 +80,36 @@ p {
 
 .answers {
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     font-size: 20px;
+}
+
+#gif {
+    margin-left: 220px;
+    margin-bottom: 10px;
+}
+
+#correctAnswers {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#incorrectAnswers {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#unanswered {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#subMsg {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
 }
